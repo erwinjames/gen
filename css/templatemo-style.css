@@ -841,8 +841,8 @@ textarea.form-control {
   width: 160px;
   border-radius: 50%;
   padding: 20px;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
-    -6px -6px 10px -1px rgba(169, 169, 169, 0.7);
+
+  box-shadow: 1px 1px 1px 1px rgb(227, 227, 227);
 }
 
 .inner {
@@ -852,20 +852,17 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 4px 4px 6px -1px rgba(94, 94, 94, 0.2),
-    inset -4px -4px 6px -1px rgba(186, 186, 186, 0.7),
-    -0.5px -0.5px 0px rgb(169, 169, 169),
-    0.5px 0.5px 0px rgba(116, 116, 116, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 4px 4px 6px -1px rgba(202, 202, 202, 0.2);
 }
 
 #number {
-  font-weight: 600;
+  font-weight: 400;
   color: #555;
 }
 
 circle {
   fill: none;
-  stroke: #fff;
+  stroke: #dbdbdb;
   stroke-width: 20px;
   stroke-dasharray: 540;
   stroke-dashoffset: 540;
