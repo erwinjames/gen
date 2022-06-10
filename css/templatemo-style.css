@@ -177,8 +177,8 @@ video {
   border-radius: 10px;
 }
 .btn:hover, .btn:focus {
-  color:#fff;
-  border-color:#fff;
+  color:rgb(123, 123, 123);
+  border-color:rgb(124, 124, 124);
   background:none;
 }
 .btn:focus {
@@ -386,13 +386,13 @@ a#logo {
   display:inline-block;
   line-height:50px;
   text-align:center;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgb(71, 70, 70);
+  background: rgba(62, 62, 62, 0.1);
+  color: #fff;
   font-size:18px;
 }
 .social-icons li a:hover {
-  color:#fff;
-  background-color: #fff;
+  color:#CE9F95;
+  background-color: #3e3e3e;
 }
 /*==============================================
 04. WELCOME BLOCK CSS
