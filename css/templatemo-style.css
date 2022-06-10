@@ -808,27 +808,12 @@ textarea.form-control {
 .last-skill {
   border-bottom: none;
 }
-.skills-row span {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  background-color: #fff;
-  color: #1e1e1e;
-  border-radius: 50%;
-  font-size: 16px;
-  font-weight: 700;
-  left: 0;
-  top: -21px;
-  position: absolute;
-  z-index: 999;
-}
+
 .skills-row h6 {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 600;
+  color: rgb(81, 81, 81);
   text-align: right;
   margin-bottom: -10px;
 }
@@ -839,35 +824,62 @@ textarea.form-control {
   background-color: rgba(250,250,250,0.25);
   position: relative;
 }
-.filled-bar {
-  position: absolute;
-  z-index: 99;
-  width: 64%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 3px;
+
+.body-all,* {
+  margin: 0%;
+  padding: 0%;
 }
-.filled-bar-4 {
-  position: absolute;
-  z-index: 99;
-  width: 90%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 3px;
+
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
-.filled-bar-3 {
-  position: absolute;
-  z-index: 99;
-  width: 95%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 3px;
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
-.filled-bar-2 {
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-weight: 600;
+  color: #555;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 540;
+  stroke-dashoffset: 540;
+  animation: anim 3s linear forwards;
+}
+
+.html-circle-skill {
   position: absolute;
-  z-index: 99;
-  width: 100%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 3px;
+  top: 0%;
+  left: 0%;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 170;
+  }
 }
