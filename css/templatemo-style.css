@@ -984,6 +984,10 @@ textarea.form-control {
     padding: 0%;
 }
 
+.body-all .skill-out.skill {
+    margin: 0 auto;
+}
+
 .skill-out {
     height: 200px;
     width: 200px;

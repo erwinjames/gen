@@ -249,7 +249,7 @@
                                                     <div class="skill">
                                                         <div class="outer">
                                                             <div class="inner">
-                                                                <div id="number">
+                                                                <div id="number1">
                                                                     65%
                                                                 </div>
                                                             </div>
@@ -271,7 +271,29 @@
                                                     <div class="skill">
                                                         <div class="outer">
                                                             <div class="inner">
-                                                                <div id="number">
+                                                                <div id="number2">
+                                                                    65%
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="html-circle-skill">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                      <defs>
+                                                        <linearGradient id="GradientColor">
+                                                          <stop offset="0%" stop-color="#e91e63" />
+                                                          <stop offset="100%" stop-color="#673ab7" />
+                                                        </linearGradient>
+                                                      </defs>
+                                                      <circle id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                                    </svg>
+                                                  </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-out">
+                                                    <div class="skill">
+                                                        <div class="outer">
+                                                            <div class="inner">
+                                                                <div id="number3">
                                                                     65%
                                                                 </div>
                                                             </div>
@@ -532,6 +554,42 @@
             } else {
                 counter += 1;
                 number.innerHTML = "PHOTOSHOP " + counter + "%";
+            }
+        }, 30);
+    </script>
+    <script>
+        let number1 = document.getElementById("number1");
+        let counter1 = 0;
+        setInterval(() => {
+            if (counter1 == 95) {
+                clearInterval();
+            } else {
+                counter1 += 1;
+                number1.innerHTML = "ILLUSTRATOR " + counter1 + "%";
+            }
+        }, 30);
+    </script>
+    <script>
+        let number2 = document.getElementById("number2");
+        let counter2 = 0;
+        setInterval(() => {
+            if (counter2 == 95) {
+                clearInterval();
+            } else {
+                counter2 += 1;
+                number2.innerHTML = "ADOBE MUSE " + counter2 + "%";
+            }
+        }, 30);
+    </script>
+    <script>
+        let number3 = document.getElementById("number3");
+        let counter3 = 0;
+        setInterval(() => {
+            if (counter3 == 95) {
+                clearInterval();
+            } else {
+                counter3 += 1;
+                number3.innerHTML = "AUTO CAD " + counter3 + "%";
             }
         }, 30);
     </script>
