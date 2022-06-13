@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
 
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- addional script -->
 
 </head>
 
@@ -358,11 +360,39 @@
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
-                                                <img src="" alt="IMAGE OF YOUR WORK">
+                                                <img src="images/gensegalesPortfolio/banner/banner1.png" alt="IMAGE OF YOUR WORK">
+                                            </div>
+                                            <div  class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Banner Design</h4>
+                                                <a title="Image 1" href="#">
+                                                <p class="thumbnail" id="image-1" >Gallery Preview</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/gensegalesPortfolio/banner/banner2.png" alt="IMAGE OF YOUR WORK">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>some name</h4>
-                                                <p>Descripton of your work</p>
+                                                <h4>Banner Design</h4>
+                                                <a title="Image 2" href="#">
+                                                    <p class="thumbnail" id="image-2" >Gallery Preview</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img style="width:340px;height:400px" src="images/gensegalesPortfolio/cards/card1.png" alt="IMAGE OF YOUR WORK">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Cards</h4>
+                                                <a title="Image 3" href="#">
+                                                    <p class="thumbnail" id="image-3" >Gallery Preview</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -383,29 +413,7 @@
                                                 <img src="" alt="IMAGE OF YOUR WORK">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>some name</h4>
-                                                <p>Descripton of your work</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="" alt="IMAGE OF YOUR WORK">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>some name</h4>
-                                                <p>Descripton of your work</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="portfolio-item">
-                                            <div class="thumb">
-                                                <img src="" alt="IMAGE OF YOUR WORK">
-                                            </div>
-                                            <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>some name</h4>
+                                                <h4>some n</h4>
                                                 <p>Descripton of your work</p>
                                             </div>
                                         </div>
@@ -493,7 +501,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="section animated-row" data-section="slide07">
                 <div class="section-inner">
                     <div class="row justify-content-center">
@@ -552,6 +559,52 @@
         </div>
     </div>
 
+	<div class="hidden" id="img-repo">
+		<!-- #image-1 -->
+		<div class="item" id="image-1">
+			<img width="80%" class="thumbnail img-responsive" title="Image 11" src="images/gensegalesPortfolio/banner/banner1.png">
+		</div>
+		<div class="item" id="image-2">
+			<img width="80%"  class="thumbnail img-responsive" title="Image 12" src="images/gensegalesPortfolio/banner/banner2.png">
+		</div> 
+      
+		<!-- #image-3-->
+		<div class="item" id="image-3">
+			<img class="thumbnail img-responsive" title="Image 31" src="http://dummyimage.com/600x350/449955/FFF">
+		</div>
+		<div class="item" id="image-3">
+			<img class="thumbnail img-responsive" title="Image 32" src="http://dummyimage.com/600x600/449955/FFF">
+		</div>
+		<div class="item" id="image-3">
+			<img class="thumbnail img-responsive" title="Image 33" src="http://dummyimage.com/300x300/449955/FFF">
+		</div>        
+		
+	</div>
+
+<div class="modal" id="modal-gallery" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal">×</button>
+         
+      </div>
+      <div class="modal-body">
+          <div id="modal-carousel" class="carousel">
+   
+            <div class="carousel-inner">           
+            </div>
+            
+            <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            
+          </div>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
     <script src="js/jquery.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
@@ -626,6 +679,43 @@
                 number4.innerHTML = "TECHNICAL DRAWING " + counter4 + "%";
             }
         }, 30);
+    </script>
+    <script>
+        $(document).ready(function() {
+        
+        /* activate the carousel */
+        $("#modal-carousel").carousel({interval:false});
+     
+        /* change modal title when slide changes */
+        $("#modal-carousel").on("slid.bs.carousel",       function () {
+             $(".modal-title")
+             .html($(this)
+             .find(".active img")
+             .attr("title"));
+        });
+     
+        /* when clicking a thumbnail */
+        $(".row .thumbnail").click(function(){
+         var content = $(".carousel-inner");
+         var title = $(".modal-title");
+       
+         content.empty();  
+         title.empty();
+       
+           var id = this.id;  
+          var repo = $("#img-repo .item");
+          var repoCopy = repo.filter("#" + id).clone();
+          var active = repoCopy.first();
+       
+         active.addClass("active");
+         title.html(active.find("img").attr("title"));
+           content.append(repoCopy);
+     
+         // show the modal
+           $("#modal-gallery").modal("show");
+       });
+     
+     });
     </script>
 </body>
 
