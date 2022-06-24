@@ -5,6 +5,287 @@ body {
     }
 }
 
+#modal-container3 {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 200;
+    &.three {
+        transform: scale(1);
+        .modal-background3 {
+            background: rgba(0, 0, 0, .0);
+            animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            .modalScss3 {
+                background-color: transparent;
+                animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                h2,
+                p,
+                .gallery {
+                    opacity: 0;
+                    position: relative;
+                    animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                }
+                .modal-svg3 {
+                    rect {
+                        animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    }
+                }
+            }
+        }
+        &.out {
+            animation: quickScaleDown 0s .5s linear forwards;
+            .modal-background3 {
+                animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                .modalScss3 {
+                    animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    h2,
+                    p,
+                    .gallery {
+                        animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    }
+                    .modal-svg3 {
+                        rect {
+                            animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-background3 {
+        display: table-cell;
+        background: rgba(0, 0, 0, .8);
+        text-align: center;
+        vertical-align: middle;
+        .modalScss3 {
+            width: 80%;
+            background: white;
+            padding: 50px;
+            display: inline-block;
+            border-radius: 3px;
+            font-weight: 300;
+            position: relative;
+            h2 {
+                color: gray;
+                font-size: 25px;
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+            p {
+                color: gray;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .modal-svg3 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 3px;
+                rect {
+                    stroke: rgb(255, 255, 255);
+                    stroke-width: 20px;
+                    stroke-dasharray: 778;
+                    stroke-dashoffset: 778;
+                }
+            }
+        }
+    }
+}
+
+// 
+#modal-container2 {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 200;
+    &.two {
+        transform: scale(1);
+        .modal-background2 {
+            background: rgba(0, 0, 0, .0);
+            animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            .modalScss2 {
+                background-color: transparent;
+                animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                h2,
+                p,
+                .gallery {
+                    opacity: 0;
+                    position: relative;
+                    animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                }
+                .modal-svg2 {
+                    rect {
+                        animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    }
+                }
+            }
+        }
+        &.out {
+            animation: quickScaleDown 0s .5s linear forwards;
+            .modal-background2 {
+                animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                .modalScss2 {
+                    animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    h2,
+                    p,
+                    .gallery {
+                        animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    }
+                    .modal-svg2 {
+                        rect {
+                            animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-background2 {
+        display: table-cell;
+        background: rgba(0, 0, 0, .8);
+        text-align: center;
+        vertical-align: middle;
+        .modalScss2 {
+            width: 80%;
+            background: white;
+            padding: 50px;
+            display: inline-block;
+            border-radius: 3px;
+            font-weight: 300;
+            position: relative;
+            h2 {
+                color: gray;
+                font-size: 25px;
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+            p {
+                color: gray;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .modal-svg2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 3px;
+                rect {
+                    stroke: rgb(255, 255, 255);
+                    stroke-width: 20px;
+                    stroke-dasharray: 778;
+                    stroke-dashoffset: 778;
+                }
+            }
+        }
+    }
+}
+
+// 
+#modal-container1 {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 200;
+    &.one {
+        transform: scale(1);
+        .modal-background1 {
+            background: rgba(0, 0, 0, .0);
+            animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            .modalScss1 {
+                background-color: transparent;
+                animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                h2,
+                p,
+                .gallery {
+                    opacity: 0;
+                    position: relative;
+                    animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                }
+                .modal-svg1 {
+                    rect {
+                        animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    }
+                }
+            }
+        }
+        &.out {
+            animation: quickScaleDown 0s .5s linear forwards;
+            .modal-background1 {
+                animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                .modalScss1 {
+                    animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    h2,
+                    p,
+                    .gallery {
+                        animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                    }
+                    .modal-svg1 {
+                        rect {
+                            animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-background1 {
+        display: table-cell;
+        background: rgba(0, 0, 0, .8);
+        text-align: center;
+        vertical-align: middle;
+        .modalScss1 {
+            width: 80%;
+            background: white;
+            padding: 50px;
+            display: inline-block;
+            border-radius: 3px;
+            font-weight: 300;
+            position: relative;
+            h2 {
+                color: gray;
+                font-size: 25px;
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+            p {
+                color: gray;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .modal-svg1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 3px;
+                rect {
+                    stroke: rgb(255, 255, 255);
+                    stroke-width: 20px;
+                    stroke-dasharray: 778;
+                    stroke-dashoffset: 778;
+                }
+            }
+        }
+    }
+}
+
 #modal-container {
     position: fixed;
     display: table;
@@ -14,6 +295,54 @@ body {
     left: 0;
     transform: scale(0);
     z-index: 200;
+    &.three {
+        z-index: 0;
+        transform: scale(1);
+        .modal-background {
+            background: rgba(0, 0, 0, .6);
+            .modal {
+                animation: moveUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            }
+        }
+        +.content {
+            z-index: 1;
+            animation: slideUpLarge .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+        &.out {
+            .modal-background {
+                .modal {
+                    animation: moveDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                }
+            }
+            +.content {
+                animation: slideDownLarge .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            }
+        }
+    }
+    &.four {
+        z-index: 0;
+        transform: scale(1);
+        .modal-background {
+            background: rgba(0, 0, 0, .7);
+            .modal {
+                animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            }
+        }
+        +.content {
+            z-index: 1;
+            animation: blowUpContent .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+        &.out {
+            .modal-background {
+                .modal {
+                    animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+                }
+            }
+            +.content {
+                animation: blowUpContentTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            }
+        }
+    }
     &.six {
         transform: scale(1);
         .modal-background {
@@ -24,7 +353,7 @@ body {
                 animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
                 h2,
                 p,
-                .gallery li a img {
+                .gallery {
                     opacity: 0;
                     position: relative;
                     animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
@@ -44,7 +373,7 @@ body {
                     animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
                     h2,
                     p,
-                    .gallery li a img {
+                    .gallery {
                         animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
                     }
                     .modal-svg {
@@ -81,133 +410,6 @@ body {
                 line-height: 22px;
             }
             .modal-svg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                border-radius: 3px;
-                rect {
-                    stroke: rgb(255, 255, 255);
-                    stroke-width: 20px;
-                    stroke-dasharray: 778;
-                    stroke-dashoffset: 778;
-                }
-            }
-        }
-    }
-}
-
-#modal-container1 {
-    position: fixed;
-    display: table;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    z-index: 200;
-    &.six1 {
-        transform: scale(1);
-        .modal-background {
-            background: rgba(0, 0, 0, .0);
-            animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-            .modalScss1 {
-                background-color: transparent;
-                animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                h2,
-                p,
-                .gallery1 li a img {
-                    opacity: 0;
-                    position: relative;
-                    animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                }
-                .modal-svg1 {
-                    rect {
-                        animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                    }
-                }
-            }
-        }
-        &.out {
-            animation: quickScaleDown 0s .5s linear forwards;
-            .modal-background1 {
-                animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                .modalScss1 {
-                    animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                    h2,
-                    p,
-                    .gallery1 li a img {
-                        animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                    }
-                    .modal-svg1 {
-                        rect {
-                            animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .modal-background {
-        display: table-cell;
-        background: rgba(0, 0, 0, .8);
-        text-align: center;
-        vertical-align: middle;
-        .modalScss {
-            width: 80%;
-            background: white;
-            padding: 50px;
-            display: inline-block;
-            border-radius: 3px;
-            font-weight: 300;
-            position: relative;
-            h2 {
-                color: gray;
-                font-size: 25px;
-                line-height: 25px;
-                margin-bottom: 15px;
-            }
-            p {
-                color: gray;
-                font-size: 18px;
-                line-height: 22px;
-            }
-            .modal-svg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                border-radius: 3px;
-                rect {
-                    stroke: rgb(255, 255, 255);
-                    stroke-width: 20px;
-                    stroke-dasharray: 778;
-                    stroke-dashoffset: 778;
-                }
-            }
-        }
-        .modalScss1 {
-            width: 80%;
-            background: white;
-            padding: 50px;
-            display: inline-block;
-            border-radius: 3px;
-            font-weight: 300;
-            position: relative;
-            h2 {
-                color: gray;
-                font-size: 25px;
-                line-height: 25px;
-                margin-bottom: 15px;
-            }
-            p {
-                color: gray;
-                font-size: 18px;
-                line-height: 22px;
-            }
-            .modal-svg1 {
                 position: absolute;
                 top: 0;
                 left: 0;
