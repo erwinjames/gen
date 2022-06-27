@@ -3,6 +3,202 @@ body.modal-active {
   overflow: hidden;
 }
 
+#modal-container5 {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 200;
+}
+#modal-container5.five {
+  transform: scale(1);
+}
+#modal-container5.five .modal-background5 {
+  background: rgba(0, 0, 0, 0);
+  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five .modal-background5 .modalScss5 {
+  background-color: transparent;
+  -webkit-animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five .modal-background5 .modalScss5 h2,
+#modal-container5.five .modal-background5 .modalScss5 p,
+#modal-container5.five .modal-background5 .modalScss5 .gallery {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five .modal-background5 .modalScss5 .modal-svg5 rect {
+  -webkit-animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five.out {
+  -webkit-animation: quickScaleDown 0s 0.5s linear forwards;
+          animation: quickScaleDown 0s 0.5s linear forwards;
+}
+#modal-container5.five.out .modal-background5 {
+  -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five.out .modal-background5 .modalScss5 {
+  -webkit-animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five.out .modal-background5 .modalScss5 h2,
+#modal-container5.five.out .modal-background5 .modalScss5 p,
+#modal-container5.five.out .modal-background5 .modalScss5 .gallery {
+  -webkit-animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5.five.out .modal-background5 .modalScss5 .modal-svg5 rect {
+  -webkit-animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container5 .modal-background5 {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container5 .modal-background5 .modalScss5 {
+  width: 80%;
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+}
+#modal-container5 .modal-background5 .modalScss5 h2 {
+  color: gray;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#modal-container5 .modal-background5 .modalScss5 p {
+  color: gray;
+  font-size: 18px;
+  line-height: 22px;
+}
+#modal-container5 .modal-background5 .modalScss5 .modal-svg5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container5 .modal-background5 .modalScss5 .modal-svg5 rect {
+  stroke: rgb(255, 255, 255);
+  stroke-width: 20px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
+#modal-container4 {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 200;
+}
+#modal-container4.four {
+  transform: scale(1);
+}
+#modal-container4.four .modal-background4 {
+  background: rgba(0, 0, 0, 0);
+  -webkit-animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four .modal-background4 .modalScss4 {
+  background-color: transparent;
+  -webkit-animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four .modal-background4 .modalScss4 h2,
+#modal-container4.four .modal-background4 .modalScss4 p,
+#modal-container4.four .modal-background4 .modalScss4 .gallery {
+  opacity: 0;
+  position: relative;
+  -webkit-animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four .modal-background4 .modalScss4 .modal-svg4 rect {
+  -webkit-animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four.out {
+  -webkit-animation: quickScaleDown 0s 0.5s linear forwards;
+          animation: quickScaleDown 0s 0.5s linear forwards;
+}
+#modal-container4.four.out .modal-background4 {
+  -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four.out .modal-background4 .modalScss4 {
+  -webkit-animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four.out .modal-background4 .modalScss4 h2,
+#modal-container4.four.out .modal-background4 .modalScss4 p,
+#modal-container4.four.out .modal-background4 .modalScss4 .gallery {
+  -webkit-animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4.four.out .modal-background4 .modalScss4 .modal-svg4 rect {
+  -webkit-animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container4 .modal-background4 {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container4 .modal-background4 .modalScss4 {
+  width: 80%;
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+}
+#modal-container4 .modal-background4 .modalScss4 h2 {
+  color: gray;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#modal-container4 .modal-background4 .modalScss4 p {
+  color: gray;
+  font-size: 18px;
+  line-height: 22px;
+}
+#modal-container4 .modal-background4 .modalScss4 .modal-svg4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+#modal-container4 .modal-background4 .modalScss4 .modal-svg4 rect {
+  stroke: rgb(255, 255, 255);
+  stroke-width: 20px;
+  stroke-dasharray: 778;
+  stroke-dashoffset: 778;
+}
+
 #modal-container3 {
   position: fixed;
   display: table;

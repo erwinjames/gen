@@ -1377,3 +1377,7 @@ li img {
     position: relative;
     margin: auto;
 }
+
+.tall img {
+    padding: 5px;
+}
