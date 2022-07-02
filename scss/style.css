@@ -612,6 +612,7 @@ body.modal-active {
   border-radius: 3px;
   font-weight: 300;
   position: relative;
+  z-index: 300;
 }
 #modal-container .modal-background .modalScss h2 {
   color: gray;

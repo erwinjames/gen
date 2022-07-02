@@ -21,7 +21,7 @@ $('.buttonModal').click(function() {
     console.log(buttonId);
 })
 
-$('#modal_close').click(function() {
+$('#close_modal').click(function() {
     $(this).addClass('out');
     $('body').removeClass('modal-active');
 });
