@@ -5,6 +5,29 @@ body {
     }
 }
 
+.close {
+    cursor:pointer;
+    z-index:1000;
+    display:flex;
+  
+    &:after, &:before {
+      
+      content:"x";
+      height:20px;
+      width:20px;
+      border-top:1px solid #000;
+      position:absolute;
+      top:7px;
+      right:-8px;
+    }  
+    &:before {    
+      right:6px;
+    }
+    
+    
+  }
+
+
 #modal-container5 {
     position: fixed;
     display: table;
@@ -584,7 +607,6 @@ body {
             border-radius: 3px;
             font-weight: 300;
             position: relative;
-            z-index:300;
             h2 {
                 color: gray;
                 font-size: 25px;
@@ -596,6 +618,7 @@ body {
                 font-size: 18px;
                 line-height: 22px;
             }
+            
             .modal-svg {
                 position: absolute;
                 top: 0;

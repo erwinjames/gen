@@ -3,6 +3,24 @@ body.modal-active {
   overflow: hidden;
 }
 
+.close {
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+}
+.close:after, .close:before {
+  content: "x";
+  height: 20px;
+  width: 20px;
+  border-top: 1px solid #000;
+  position: absolute;
+  top: 7px;
+  right: -8px;
+}
+.close:before {
+  right: 6px;
+}
+
 #modal-container5 {
   position: fixed;
   display: table;
@@ -612,7 +630,6 @@ body.modal-active {
   border-radius: 3px;
   font-weight: 300;
   position: relative;
-  z-index: 300;
 }
 #modal-container .modal-background .modalScss h2 {
   color: gray;
