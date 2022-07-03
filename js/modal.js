@@ -23,42 +23,42 @@ $('.buttonModal').click(function() {
 
 $('.close').click(function() {
     console.log("click");
-    $(this).addClass('out');
+    $("#modal-container").addClass('out1');
     $('body').removeClass('modal-active');
 });
 // 1
-$('#modal-container1').click(function() {
-    $(this).addClass('out');
+$('').click(function() {
+    $("#modal-container1").addClass('out');
     $('body').removeClass('modal-active');
 });
 // 2
-$('#modal-container2').click(function() {
-    $(this).addClass('out');
+$('.close').click(function() {
+    $('#modal-container2').addClass('out');
     $('body').removeClass('modal-active');
 });
 // 3
-$('#modal-container3').click(function() {
-    $(this).addClass('out');
+$('.close').click(function() {
+    $('#modal-container3').addClass('out');
     $('body').removeClass('modal-active');
 });
 // 4
-$('#modal-container4').click(function() {
-    $(this).addClass('out');
+$('.close').click(function() {
+    $('#modal-container4').addClass('out');
     $('body').removeClass('modal-active');
 });
 // 5
-$('#modal-container5').click(function() {
-    $(this).addClass('out');
+$('.close').click(function() {
+    $('#modal-container5').addClass('out');
     $('body').removeClass('modal-active');
 });
 // 7
-$('#modal-container7').click(function() {
-    $(this).addClass('out');
+$('.close').click(function() {
+    $('#modal-container7').addClass('out');
     $('body').removeClass('modal-active');
 });
 // 8
-$('#modal-container8').click(function() {
-    $(this).addClass('out');
+$('.close').click(function() {
+    $('#modal-container8').addClass('out');
     $('body').removeClass('modal-active');
 });
 // banner

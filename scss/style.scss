@@ -6,27 +6,23 @@ body {
 }
 
 .close {
-    cursor:pointer;
-    z-index:1000;
-    display:flex;
-  
-    &:after, &:before {
-      
-      content:"x";
-      height:20px;
-      width:20px;
-      border-top:1px solid #000;
-      position:absolute;
-      top:7px;
-      right:-8px;
-    }  
-    &:before {    
-      right:6px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    &:after,
+    &:before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-top: 1px solid #000;
+        position: absolute;
+        top: 7px;
+        right: -8px;
     }
-    
-    
-  }
-
+    &:before {
+        right: 6px;
+    }
+}
 
 #modal-container5 {
     position: fixed;
@@ -574,7 +570,7 @@ body {
                 }
             }
         }
-        &.out {
+        &.out1 {
             animation: quickScaleDown 0s .5s linear forwards;
             .modal-background {
                 animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
@@ -618,13 +614,13 @@ body {
                 font-size: 18px;
                 line-height: 22px;
             }
-            
             .modal-svg {
                 position: absolute;
                 top: 0;
                 left: 0;
                 height: 100%;
                 width: 100%;
+                z-index: 0;
                 border-radius: 3px;
                 rect {
                     stroke: rgb(255, 255, 255);

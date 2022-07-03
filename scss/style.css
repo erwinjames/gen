@@ -9,7 +9,7 @@ body.modal-active {
   display: flex;
 }
 .close:after, .close:before {
-  content: "x";
+  content: "";
   height: 20px;
   width: 20px;
   border-top: 1px solid #000;
@@ -594,25 +594,25 @@ body.modal-active {
   -webkit-animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
           animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.six.out {
+#modal-container.six.out1 {
   -webkit-animation: quickScaleDown 0s 0.5s linear forwards;
           animation: quickScaleDown 0s 0.5s linear forwards;
 }
-#modal-container.six.out .modal-background {
+#modal-container.six.out1 .modal-background {
   -webkit-animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
           animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.six.out .modal-background .modalScss {
+#modal-container.six.out1 .modal-background .modalScss {
   -webkit-animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
           animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.six.out .modal-background .modalScss h2,
-#modal-container.six.out .modal-background .modalScss p,
-#modal-container.six.out .modal-background .modalScss .gallery {
+#modal-container.six.out1 .modal-background .modalScss h2,
+#modal-container.six.out1 .modal-background .modalScss p,
+#modal-container.six.out1 .modal-background .modalScss .gallery {
   -webkit-animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
           animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.six.out .modal-background .modalScss .modal-svg rect {
+#modal-container.six.out1 .modal-background .modalScss .modal-svg rect {
   -webkit-animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
           animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
@@ -648,6 +648,7 @@ body.modal-active {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
   border-radius: 3px;
 }
 #modal-container .modal-background .modalScss .modal-svg rect {
