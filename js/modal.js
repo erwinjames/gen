@@ -27,7 +27,7 @@ $('.close').click(function() {
     $('body').removeClass('modal-active');
 });
 // 1
-$('').click(function() {
+$('.close').click(function() {
     $("#modal-container1").addClass('out');
     $('body').removeClass('modal-active');
 });
