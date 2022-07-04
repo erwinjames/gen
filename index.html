@@ -356,72 +356,9 @@
                                 </div> -->
                             
                                 <!-- sample skills-->
-                                <div class="skill-section">
+                                <!-- <div class="skill-section">
                                     <div class="wall">
-                                      <div class="v-boxes">
-                                        <div class="box">
-                                          <span class="tooltip">CSS</span>
-                                          <div class="box-face">
-                                            <div class="box-text"><i class="fab fa-css3-alt"></i></div>
-                                          </div>
-                                          <div class="box-back">
-                                            <div class="box-text">
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="box">
-                                          <span class="tooltip">JavaScript</span>
-                                          <div class="box-face">
-                                            <div class="box-text"><i class="fab fa-js-square"></i></div>
-                                          </div>
-                                          <div class="box-back">
-                                            <div class="box-text">
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                            </div>
-                                          </div>        
-                                        </div>
-                                        <div class="box">
-                                          <span class="tooltip">Bulma</span>
-                                          <div class="box-face">
-                                            <div class="box-text">
-                                              <img src="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" alt="">
-                                            </div>
-                                          </div>
-                                          <div class="box-back">
-                                            <div class="box-text">
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fas fa-star-half-alt"></i>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="box">
-                                          <span class="tooltip">Vue</span>
-                                          <div class="box-face">
-                                            <div class="box-text"><i class="fab fa-vuejs"></i></div>
-                                          </div>
-                                          <div class="box-back">
-                                            <div class="box-text">
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="fa fa-star"></i>
-                                              <i class="far fa-star"></i>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                                  
                                       <div class="v-boxes second">
                                         <div class="box">
                                           <span class="tooltip">PHP</span>
@@ -511,8 +448,12 @@
                                         </div>
                                       </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- end of sample skills -->
+
+                                <!-- another one -->
+                                <div id="skills-container"></div>
+                                <!-- end -->
                             </div>
 
                         </div>
@@ -1108,6 +1049,8 @@
 
     <script src="js/custom.js"></script>
     <script src="js/modal.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script>
         let number = document.getElementById("number");
         let counter = 0;
@@ -1193,6 +1136,93 @@
             });
 
         });
+    </script>
+    <script>
+        $(document).ready(function() {
+    
+    $('#skills-container').highcharts({
+	    chart: {
+	        polar: true,
+	        type: 'line'
+	    },
+	    credits: {
+			enabled: false
+		},
+	    title: {
+	        text: 'Skill'
+	    },
+	    
+	    pane: {
+	        startAngle: 0,
+	        endAngle: 360
+	    },
+	
+	    xAxis: {
+	    	type: 'category',
+	        tickInterval: 1,
+	        categories: ['CSS', 'HTML', 'JavaScript', 'jQuery', 'Customer Service'],
+	        min: 0,
+	        max: 5,
+	        tickmarkPlacement: 'on',
+
+	        lineWidth: 0,
+	        labels: {
+	        	formatter: function () {
+        			return this.value
+	        	},
+                style: {
+					color: '#fff',
+					display: "inline-block"
+					}
+	        },
+
+	    },
+	     tooltip: {
+            shared: true,
+            useHTML: true,
+            headerFormat: '<div class="newTip"><big>{point.key}</big>' + '<br/>',
+            pointFormat: '{point.y} / 5.0',
+            footerFormat: '</div>',
+            valueDecimals: 1
+        },
+	    yAxis: {
+          gridLineInterpolation: 'polygon',
+	        min: 0,
+	        max: 5,
+	        tickInterval: 1,
+			minorTickInterval: 0.5,
+			showLastLabel: 'true',
+			labels:{
+					x: 8,
+				style: {
+					color: '#fff',
+					textShadow:'1px 1px 0px #fff',
+					display: "inline-block"
+					}				
+			},
+			
+	    },
+	    
+	    plotOptions: {
+	        series: {
+	            pointStart: 0,
+	            pointInterval: 1,
+
+	        },
+	        column: {
+	            pointPadding: 0,
+	            groupPadding: 0
+	        }
+	    },
+	
+	    series: [{
+	        type: 'area',
+	        name: 'Skills',
+	        data: [4.5, 4.5, 2, 2.5, 5],
+	        pointPlacement: "on"
+	    }]
+	});
+});
     </script>
 </body>
 

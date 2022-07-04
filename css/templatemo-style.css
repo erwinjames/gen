@@ -1408,3 +1408,21 @@ li img {
 .carousel-control-prev,.carousel-control-next,.close_modal{
     z-index:400;
 }
+#skills-container{
+/* border: 1px solid #999;
+box-shadow: 0px 0px 8px 0px #999; */
+width: 600px;
+height: 410px;
+margin: 0 auto;
+}
+.newTip{
+    min-width: 8em;
+    text-align: center;
+}
+.newTip big {
+    font-size: 10pt;
+    font-weight: bold;
+}
+.highcharts-background{
+    fill: none;
+}
